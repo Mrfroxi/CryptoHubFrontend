@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.logo-text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold; 
+    transition: transform 0.3s;
+    position: relative;
+  }
+  
+  .logo-text:hover {
+    transform: translateY(15px);
+  }

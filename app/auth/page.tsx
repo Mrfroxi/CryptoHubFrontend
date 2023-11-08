@@ -1,7 +1,6 @@
 'use client'
 import AuthFormPage from '@/src/pages/authFormPage/authFormPage';
-import { useInput } from '@/src/shared/hoc/useInput/useInput';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 
 const page = () => {
