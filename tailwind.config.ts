@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      padding: {
+        '181px': '181px',
+      },
       colors:{
         authgray:'#6a6d78',
         authblack:'#131722',

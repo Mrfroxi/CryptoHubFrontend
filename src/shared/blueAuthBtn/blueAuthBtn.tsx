@@ -1,0 +1,13 @@
+import React from 'react';
+
+const BlueAuthBtn = ({ signUpBool }: any) => {
+  return (
+    <div className="flex justify-center mb-4">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4  rounded min-w-min border rounded-lg w-full">
+        {signUpBool ? 'Create Account' : 'Sign In'}
+      </button>
+    </div>
+  );
+};
+
+export default BlueAuthBtn;

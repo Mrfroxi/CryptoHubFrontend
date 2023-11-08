@@ -30,7 +30,7 @@ const AuthEmailInput = ({elemType}:any) => {
                     value={value}
                     onChange={e => onChange(e)}
                     onBlur={e => onBlur(e)}
-                    className="w-full pl-10 px-3 py-4 border rounded-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-10 px-10 py-4 border rounded-lg focus:outline-none focus:border-blue-500"
                     placeholder="Enter your email"
                 />
         </div>

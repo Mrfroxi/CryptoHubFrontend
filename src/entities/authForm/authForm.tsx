@@ -5,7 +5,7 @@ import AuthEmailInput from '@/src/features/authEmailInput/authEmailInput';
 
 const AuthForm = ({email,password}:any) => {
 
-    const [eyeBool,seteyeBool] = useState(false);
+    const [eyeBool,seteyeBool] = useState(true);
 
     const handleChangeEyeBool = () => {
         seteyeBool(!eyeBool);
@@ -13,7 +13,7 @@ const AuthForm = ({email,password}:any) => {
 
     return (
     
-            <form className="p-6 bg-white ">
+            <form className="pt-6 pb-3 bg-white ">
 
             
                 <AuthPasswordInput handleChangeEyeBool={handleChangeEyeBool} eyeBool={eyeBool}  elemType={password}/>
