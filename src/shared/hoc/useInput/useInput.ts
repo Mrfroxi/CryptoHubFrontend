@@ -14,6 +14,13 @@ export const useInput = (initialValue:string ,validations:any) =>{
 		setValue(e.target.value);
 	};
 
+	const reset = () =>{
+		setValue('');
+		setDirty(false);
+		valid.resetError();
+
+	};
+
 	const onBlur= () =>{
 		setDirty(true);
 	};
@@ -21,6 +28,7 @@ export const useInput = (initialValue:string ,validations:any) =>{
 		value,
 		onChange,
 		onBlur,
+		reset,
 		isDirty,
 		...valid
 	};
