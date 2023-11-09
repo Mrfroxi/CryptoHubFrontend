@@ -1,6 +1,6 @@
 import React from 'react'
-import EyeSvgCrossSvg from '@/src/shared/eyeCrossSvg/eyeCrossSvg'
-import EyeSvg from '@/src/shared/eyeSvg/eyeSvg'
+import EyeSvgCrossSvg from '@/src/shared/svgs/eyeCrossSvg/eyeCrossSvg'
+import EyeSvg from '@/src/shared/svgs/eyeSvg/eyeSvg'
 
 const EyesElemSvg = ({handleChangeEyeBool,eyeBool}:any) => {
   return (

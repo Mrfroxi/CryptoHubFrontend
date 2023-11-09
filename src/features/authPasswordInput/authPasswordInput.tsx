@@ -1,6 +1,6 @@
 import AuthLabel from '@/src/entities/authLabel/authLabel'
 import EyesElemSvg from '@/src/entities/eyesElemSvg/eyesElemSvg'
-import ErrorElem from '@/src/shared/errorElem/errorElem';
+import ErrorElem from '@/src/shared/components/errorElem/errorElem';
 import React from 'react'
 
 const AuthPasswordInput = ({handleChangeEyeBool,eyeBool, elemType}:any) => {

@@ -3,9 +3,9 @@ import AuthMainText from '@/src/entities/authMainText/authMainText';
 import AuthSwitchElem from '@/src/entities/authSwitchElem/authSwitchElem'
 import { useInput } from '@/src/shared/hoc/useInput/useInput';
 import AuthForm from '@/src/entities/authForm/authForm';
-import BlueAuthBtn from '@/src/shared/blueAuthBtn/blueAuthBtn';
+import BlueAuthBtn from '@/src/shared/components/blueAuthBtn/blueAuthBtn';
 import { useRouter } from 'next/navigation';
-import MainLogo from '@/src/shared/mainLogo/mainLogo';
+import MainLogo from '@/src/shared/svgs/mainLogo/mainLogo';
 
 const AuthFormPage = () => {
 

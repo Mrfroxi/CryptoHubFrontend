@@ -1,6 +1,6 @@
 import AuthLabel from '@/src/entities/authLabel/authLabel'
-import ErrorElem from '@/src/shared/errorElem/errorElem';
-import MessageIcon from '@/src/shared/messageIconSvg/messageIcon'
+import ErrorElem from '@/src/shared/components/errorElem/errorElem';
+import MessageIcon from '@/src/shared/svgs/messageIconSvg/messageIcon'
 import React from 'react'
 
 const AuthEmailInput = ({elemType}:any) => {
