@@ -8,19 +8,25 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      // padding: '2rem',
+    },
     extend: {
+      textColor: {
+        'transparent': 'transparent',
+      },
       padding: {
         '181px': '181px',
       },
       colors:{
         authgray:'#6a6d78',
         authblack:'#131722',
+        linkHoverMainBg: '#fff3',
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      fontFamily:{
+        museo:['Museo Sans'],
+      }
     },
   },
   plugins: [],

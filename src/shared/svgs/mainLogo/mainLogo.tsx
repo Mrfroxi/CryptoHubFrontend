@@ -3,7 +3,7 @@ import React from 'react'
 const MainLogo = () => {
   return (
    
-    <div className="logo cursor-pointer">
+    <div className="logo mainLogo  cursor-pointer min-[140px] text-white">
         <span className="logo-text text-red-500">C</span>
         <span className="logo-text">r</span>
         <span className="logo-text">y</span>

@@ -13,3 +13,11 @@
   .logo-text:hover {
     transform: translateY(15px);
   }
+
+  .mainLogo{
+    min-width: 140px;
+  }
+
+  .mainBackGround{
+    background-color: #060606;
+  }
