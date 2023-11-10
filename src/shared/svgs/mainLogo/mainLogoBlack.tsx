@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
-const MainLogo = () => {
+const MainLogoBlack = () => {
   return (
+    
     <Link href={'/'}>
-       <div className="logo mainLogo  cursor-pointer min-[140px] text-white">
+      <div className={`logo mainLogo  cursor-pointer min-[140px] text-black `}>
         <span className="logo-text text-red-500">C</span>
         <span className="logo-text">r</span>
         <span className="logo-text">y</span>
@@ -15,10 +16,10 @@ const MainLogo = () => {
         <span className="logo-text">o</span>
         <span className="logo-text">i</span>
         <span className="logo-text">n</span>
-      </div>
+    </div>
     </Link>
-   
+    
   )
 }
 
-export default MainLogo
+export default MainLogoBlack
