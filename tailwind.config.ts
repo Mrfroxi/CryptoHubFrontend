@@ -23,10 +23,9 @@ const config: Config = {
         authgray:'#6a6d78',
         authblack:'#131722',
         linkHoverMainBg: '#fff3',
+        mainBackGround: '#060606'
       },
-      fontFamily:{
-        museo:['Museo Sans'],
-      }
+
     },
   },
   plugins: [],

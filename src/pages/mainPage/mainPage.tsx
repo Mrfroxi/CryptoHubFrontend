@@ -1,15 +1,19 @@
 import MainHeader from '@/src/features/mainHeader/mainHeader'
-import NavBar from '@/src/features/navBar/navBar'
 import StarsCanvas from '@/src/features/starBackground/starBackgrround'
+import MainSection from '@/src/shared/components/mainSection/mainSection'
 import React from 'react'
 
 const MainPage = () => {
   return (
 
-    <main className='mainBackGround h-[100vh]'>
+    <main className='bg-mainBackGround'>
+
         <MainHeader />
 
+        <MainSection />
+
         <StarsCanvas />
+        
     </main>
   
   )
