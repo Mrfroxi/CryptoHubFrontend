@@ -11,6 +11,7 @@ export type AuthInput = {
     isDirty: boolean;
 }
 
+
 export type ErrorInputType = {
     isEmpty: boolean;
     minLengthError: boolean;
