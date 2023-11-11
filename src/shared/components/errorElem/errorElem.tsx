@@ -1,6 +1,12 @@
 import React from 'react';
+import { ErrorInputType } from '../../types/AuthInput';
 
-const ErrorElem = ({ errors, type }: any) => {
+type ErrorElemParam = {
+  type:string,
+  errors: ErrorInputType
+}
+
+const ErrorElem = ({ errors, type }: ErrorElemParam) => {
   const { emailError, isDirty, isEmpty, minLengthError } = errors;
 
   return (

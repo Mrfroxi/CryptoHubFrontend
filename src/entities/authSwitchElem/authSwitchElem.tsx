@@ -1,6 +1,11 @@
-import React,{useEffect} from 'react';
+import React  from 'react';
 
-const AuthSwitchElem = ({ signUpBool, handlerSwitchSing }) => {
+type AuthSwitchElemParam = {
+  signUpBool:boolean,
+  handlerSwitchSing: ()=> void
+}
+
+const AuthSwitchElem = ({ signUpBool, handlerSwitchSing } :AuthSwitchElemParam) => {
 
   return (
     <div className='text-center text-authblack text-sm'>

@@ -1,6 +1,10 @@
 import React from 'react';
 
-const AuthMainText = ({ signUpBool }:any) => {
+type AuthMainTextParam ={
+  signUpBool:boolean
+}
+
+const AuthMainText = ({ signUpBool }:AuthMainTextParam) => {
   return (
     <div className='text-center text-3xl text-authblack font-semibold'>
       <p>

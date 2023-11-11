@@ -1,6 +1,10 @@
 import React from 'react'
 
-const AuthLabel = ({textLabel}:any) => {
+type AuthLabelParam ={
+  textLabel:string
+}
+
+const AuthLabel = ({textLabel}:AuthLabelParam) => {
   return (
     <>
       <label htmlFor={textLabel} className="block mb-2 text-base font-medium text-authgray ">

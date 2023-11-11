@@ -2,8 +2,14 @@
 import React,{useState} from 'react'
 import AuthPasswordInput from '@/src/features/authPasswordInput/authPasswordInput';
 import AuthEmailInput from '@/src/features/authEmailInput/authEmailInput';
+import { AuthInput } from '@/src/shared/types/AuthInput';
 
-const AuthForm = ({email,password}:any) => {
+type AuthParams = {
+    email: AuthInput;
+    password: AuthInput;
+  };
+
+const AuthForm = ({email,password}:AuthParams) => {
 
     const [eyeBool,seteyeBool] = useState(true);
 
