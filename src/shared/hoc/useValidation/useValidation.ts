@@ -8,7 +8,7 @@ export const useValidation = (value:string ,validations:any) => {
 
     const resetError =() =>{
 		setEmpty(true);
-		setMinLengthError(false);
+		setMinLengthError(true);
 		setEmailError(true);
 		setInputValid(false);
 	}

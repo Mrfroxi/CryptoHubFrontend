@@ -17,7 +17,7 @@ const BlueAuthBtn = ({ signUpBool, handlerSendAuth, isValidPassword, isValidEmai
       <button
         onClick={handlerSendAuth}
         className={`${buttonColor} text-white font-bold py-4 min-w-min border rounded-lg w-full`}
-        disabled={isButtonDisabled}
+        disabled={!isButtonDisabled}
       >
         {signUpBool ? 'Create Account' : 'Sign In'}
       </button>

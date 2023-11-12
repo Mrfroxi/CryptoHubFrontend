@@ -21,3 +21,8 @@ export type ErrorInputType = {
     reset: () => void;
     isDirty: boolean;
 }
+
+export type AuthFormDto = {
+    email : string ,
+    password : string
+}

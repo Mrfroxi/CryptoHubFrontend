@@ -7,7 +7,10 @@ import AuthMainText from '@/src/entities/authMainText/authMainText';
 import AuthSwitchElem from '@/src/entities/authSwitchElem/authSwitchElem'
 import AuthForm from '@/src/entities/authForm/authForm';
 import BlueAuthBtn from '@/src/shared/components/blueAuthBtn/blueAuthBtn';
+import { AuthFormDto } from '@/src/shared/types/AuthInput';
 
+import * as Api from '@/api'
+import { setCookie } from 'nookies';
 
 type AuthInput = {
     isEmpty: boolean;
@@ -35,21 +38,53 @@ const AuthFormPage = () => {
         setsignUpBoolBool(!signUpBool);
     }
 
-    const handlerSendAuth= () => {
+    const handlerSendAuth = async () => {
 
+        if(signUpBool){
+            try{
+               
+                const { token } = await Api.auth.registration({
+                    email : email.value,
+                    password: password.value
+                });
 
+                setCookie(null , "_token" , token , {
+                    path:"/"
+                })
 
-        console.log(email)
-        console.log(password)
+                email.reset();
+                password.reset();
+            }catch(err){
+                console.log(err)
+            }
+        }else{
+            try{
+            
+                const { token } = await Api.auth.login({
+                    email : email.value,
+                    password: password.value
+                });
+
+                setCookie(null , "_token" , token , {
+                    path:"/"
+                })
+
+                email.reset();
+                password.reset();
+
+            }catch(err){
+                console.log(err)
+            }
+        }
 
     }
 
 
     return (
-        <section className='relative h-[100vh]' >
+        <section className='relative mb-10' >
       
 
-            <div className="container mx-auto max-w-md  flex-col pt-[30vh]" >     
+            <div className="container mx-auto max-w-md  flex-col pt-96" >     
           
 
                 <AuthMainText signUpBool={signUpBool} />
