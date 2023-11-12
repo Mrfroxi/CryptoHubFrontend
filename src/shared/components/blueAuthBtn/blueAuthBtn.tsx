@@ -11,15 +11,9 @@ const BlueAuthBtn = ({ signUpBool, handlerSendAuth, isValidPassword, isValidEmai
   const isButtonDisabled = isValidPassword && isValidEmail;
   const buttonColor = isButtonDisabled ? 'bg-blue-500 ' : 'bg-gray-500';
 
-  const handler = () =>{
-    console.log(isValidPassword)
-    console.log(isValidEmail)
-  }
+ 
   return (
     <div className="flex justify-center mb-4">
-      <div onClick={handler}>
-        hey
-      </div>
       <button
         onClick={handlerSendAuth}
         className={`${buttonColor} text-white font-bold py-4 min-w-min border rounded-lg w-full`}

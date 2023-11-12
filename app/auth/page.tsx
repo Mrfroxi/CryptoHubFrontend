@@ -6,11 +6,8 @@ import Link from 'next/link';
 import React from 'react'
 
 
-const page = () => {
+const authPage = () => {
   
-
-    
-
     return (
 
       <>
@@ -31,4 +28,4 @@ const page = () => {
     )
 }
 
-export default page
+export default authPage
